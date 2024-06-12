@@ -1,6 +1,16 @@
-.toc {
+.guide-title {
+    text-align: center;
+}
+
+.guide-list {
     color: navy;
     padding-left: 10px;
     column-count: 2;
+    text-align: center;
     
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
 }
