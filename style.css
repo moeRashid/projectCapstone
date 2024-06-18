@@ -1,3 +1,14 @@
+.bio {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var();
+    margin-bottom: 10px;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
 .guide-title {
     text-align: center;
 }
@@ -10,7 +21,3 @@
     
 }
 
-.col-md-6 {
-    width: 50%;
-    float: left;
-}
