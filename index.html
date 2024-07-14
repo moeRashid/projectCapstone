@@ -13,52 +13,53 @@
         />
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body class="home">
-        <header class="topRow">
-            <div class="topRow">
-                <div class="col-md-6">
-                    <div class="bio">
-                        This site will serve as resoure center and for those who
-                        have been underserved information. For the creative
-                        souls who need a guide to the starting line. The
-                        opportunities sometimes have to be created out of thin
-                        air for those of us from the trenches. This resource is
-                        not only a guide, it's an inspritation to not give up.
-                        <br />
-                        PC404's mission and aim is to create opportunities and
-                        provide knowledge. This game is free of charge. We will
-                        not only show you how to fish but also give you sample
-                        so you know this information is valuable.
-                    </div>
-                    <div class="pcEra-wrapper"></div>
+    <body>
+        <div class="container">
+            <!-- Top Row -->
+            <div class="row align-items-center mt-3">
+                <div class="col-md-2">
+                    <img src="logo.png" alt="Logo" class="img-fluid" />
                 </div>
-                <!-- End of bio col -->
                 <div class="col-md-6">
-                    <div class="guide-title">
-                        "The How-to Guide"
-                        <br />
-                        "(Chapters)"
-                    </div>
-                    <div class="guide-list">
-                        <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ol>
-                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search..."
+                    />
                 </div>
-                <!-- End of chapter col -->
+                <div class="col-md-2">
+                    <button class="btn btn-primary">Log In</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-secondary">Sign Up</button>
+                </div>
             </div>
-            <!-- End of topRow  -->
-        </header>
-        <!-- End of topRow Header -->
+
+            <!-- Links Row -->
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <button class="btn btn-link">Studio</button>
+                    <button class="btn btn-link">Gallery</button>
+                    <button class="btn btn-link">Screen</button>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <img src="image.jpg" alt="Image" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <video controls class="w-100">
+                        <source src="video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
