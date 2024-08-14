@@ -1,2 +1,130 @@
+body {
+    background-color: #C3F73A;
+}
 
+#intro {
+    color: #682D63;
+    height: 100vh;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+    #intro h1{
+        font-size: 48px;
+    }
+
+    intro code{
+        font-size: 48px;
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#intro h1 {
+    font-size: 96px;
+    animation: fadein ease-in 1s;
+}
+
+
+#intro h3 {
+    color: #CC978E;
+    animation-delay: 1s;
+    animation-name: fadein;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+} 
+
+#intro code {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    animation-name: fadein;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#arrowDown {
+    color: #436436;
+    font-size: 75px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 37.5px);
+}
+
+#Bio{
+    background: #F8C630;
+    color: #436436;
+    padding: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section{
+    box-shadow: -10px 0px 25px #272D2D;
+}
+
+.section h1 {
+    color: #682D63;
+}
+
+.section p {
+    color: #CC978E;
+}
+
+#contact {
+    background: #FA7921;
+    color:#436436 ;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+#contact a {
+    color: #682D63; 
+}
+
+#email {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+form .btn-primary {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #682D63;
+}
+
+#portfolio {
+    background-color: #F8C630;
+    padding: 30px;
+}
+
+.section, h1 {
+    color: #682D63;
+}
+
+.section, p {
+    color: #436436;
+}
+
+footer {
+    color: #682D63;
+    padding: 30px;
+}
 
