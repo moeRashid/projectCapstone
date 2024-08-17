@@ -1,9 +1,9 @@
 body {
-    background-color: #C3F73A;
+    background-color: #FCF6E9;
 }
 
 #intro {
-    color: #682D63;
+    color: black;
     height: 100vh;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -27,14 +27,30 @@ body {
     }
 }
 
-#intro h1 {
-    font-size: 96px;
-    animation: fadein ease-in 1s;
+.logo-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.rotating-logo {
+    width: 350px; /* Adjust the size as needed */
+    height: auto;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 
 #intro h3 {
-    color: #CC978E;
+    text-align: center;
+    color: black;
     animation-delay: 1s;
     animation-name: fadein;
     animation-delay: 2s;
@@ -44,6 +60,7 @@ body {
 } 
 
 #intro code {
+    color: #004AAD;
     margin-top: 20px;
     font-size: 30px;
     text-align: center;
@@ -55,35 +72,53 @@ body {
 }
 
 #arrowDown {
-    color: #436436;
+    color: #FF914D;
     font-size: 75px;
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     left: calc(50% - 37.5px);
 }
 
-#Bio{
-    background: #F8C630;
-    color: #436436;
+#Bio {
+    background:#FCF6E9;
+    color: #FCF6E9;
     padding: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
+#pop-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stacks items vertically */
+}
+
+/* Macintosh-style window */
+.mac-window {
+    width: 320px;
+    border: 2px solid #000;
+    background-color: #c0c0c0; /* Light gray window color */
+    box-shadow: 3px 3px 0px #808080; /* Old school drop shadow */
+    margin-top: 20px; /* Add some space between sections */
+    position: relative; /* Keep the positioning relative for flexbox centering */
+}
+
 section{
-    box-shadow: -10px 0px 25px #272D2D;
+    box-shadow: -10px 0px 25px #0d0d0d;
 }
 
 .section h1 {
-    color: #682D63;
+    color: Black;
 }
 
 .section p {
-    color: #CC978E;
+    color: black;
 }
 
 #contact {
-    background: #FA7921;
+    background: #FCF6E9;
     color:#436436 ;
     padding: 30px;
     margin-bottom: 15px;
@@ -107,24 +142,24 @@ form textarea {
 form .btn-primary {
     width: 100%;
     margin-top: 15px;
-    background-color: #682D63;
+    background-color: blue;
 }
 
 #portfolio {
-    background-color: #F8C630;
+    background-color: #FCF6E9;
     padding: 30px;
 }
 
 .section, h1 {
-    color: #682D63;
+    color: black;
 }
 
 .section, p {
-    color: #436436;
+    color: black;
 }
 
 footer {
-    color: #682D63;
+    color: black;
     padding: 30px;
 }
 

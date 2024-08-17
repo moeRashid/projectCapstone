@@ -30,27 +30,40 @@
     </head>
     <body>
         <div class="container">
-            <section
-                id="intro"
-                class="d-flex flex-column justify-content-center align-items-center"
-            >
-                <h1>Moé Rashid</h1>
-                <h3>Software Engineer | Visual Artist</h3>
-                <code>All Day, Always.</code>
-                <a href="#Bio">
-                    <span class="material-symbols-outlined" id="arrowDown">
-                        keyboard_double_arrow_down
-                    </span>
-                </a>
-            </section>
-            <section id="Bio">
-                <h1>Bio</h1>
-                <p>
-                    Monté is a software developer and visual artist. For 10
-                    years
-                </p>
-            </section>
-            <!-- end of bio section -->
+            <div class="logo-container">
+                <section
+                    id="intro"
+                    class="d-flex flex-column justify-content-center align-items-center"
+                >
+                    <img
+                        src="Moe Rashid.png"
+                        alt="Logo"
+                        class="rotating-logo"
+                    />
+                    <h3>Artist | Software Developer | Designer</h3>
+                    <code>Creative people need inspiration.</code>
+                    <a href="#Bio">
+                        <span class="material-symbols-outlined" id="arrowDown">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                </section>
+            </div>
+            <div class="window-container" id="pop-up">
+                <section id="Bio" class="mac-window">
+                    <div class="window-header">
+                        <div class="close-button"></div>
+                        <h1>Bio</h1>
+                    </div>
+                    <div class="window-content">
+                        <video class="video-image" controls>
+                            <source src="your-video.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+                <!-- end of bio section -->
+            </div>
             <section id="contact">
                 <h1>Contact</h1>
                 <div class="row">
