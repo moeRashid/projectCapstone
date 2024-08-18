@@ -1,165 +1,107 @@
 body {
-    background-color: #FCF6E9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-#intro {
-    color: black;
-    height: 100vh;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-@media only screen and (max-width: 600px){
-    #intro h1{
-        font-size: 48px;
-    }
-
-    intro code{
-        font-size: 48px;
-    }
-}
-
-@keyframes fadein{
-    from{
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.logo-container {
-    justify-content: center;
-    align-items: center;
-}
-
-.rotating-logo {
-    width: 350px; /* Adjust the size as needed */
-    height: auto;
-    animation: rotate 3s linear infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-
-#intro h3 {
-    text-align: center;
-    color: black;
-    animation-delay: 1s;
-    animation-name: fadein;
-    animation-delay: 2s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-} 
-
-#intro code {
-    color: #004AAD;
-    margin-top: 20px;
-    font-size: 30px;
-    text-align: center;
-    animation-name: fadein;
-    animation-delay: 3s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-#arrowDown {
-    color: #FF914D;
-    font-size: 75px;
-    position: absolute;
-    bottom: 10px;
-    left: calc(50% - 37.5px);
-}
-
-#Bio {
-    background:#FCF6E9;
-    color: #FCF6E9;
-    padding: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-#pop-up {
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    min-height: 100vh; /* Full viewport height */
-    flex-direction: column; /* Stacks items vertically */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
 }
 
-/* Macintosh-style window */
-.mac-window {
-    width: 320px;
-    border: 2px solid #000;
-    background-color: #c0c0c0; /* Light gray window color */
-    box-shadow: 3px 3px 0px #808080; /* Old school drop shadow */
-    margin-top: 20px; /* Add some space between sections */
-    position: relative; /* Keep the positioning relative for flexbox centering */
+.logo img {
+    height: 50px;
 }
 
-section{
-    box-shadow: -10px 0px 25px #0d0d0d;
+.icons .icon {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.section h1 {
-    color: Black;
+.icons .icon:hover {
+    background-color: #777;
 }
 
-.section p {
-    color: black;
+.image-container {
+    display: none;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
 }
 
-#contact {
-    background: #FCF6E9;
-    color:#436436 ;
-    padding: 30px;
-    margin-bottom: 15px;
+.image-container img {
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-#contact a {
-    color: #682D63; 
+.image-container img:hover {
+    transform: scale(1.05);
 }
 
-#email {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-form input,
-form textarea {
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
     width: 100%;
-    padding: 10px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-form .btn-primary {
-    width: 100%;
-    margin-top: 15px;
-    background-color: blue;
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
 }
 
-#portfolio {
-    background-color: #FCF6E9;
-    padding: 30px;
+.navigation {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.section, h1 {
-    color: black;
+.navigation button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
 }
 
-.section, p {
-    color: black;
+.navigation button:hover {
+    background-color: #777;
 }
 
-footer {
-    color: black;
-    padding: 30px;
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 

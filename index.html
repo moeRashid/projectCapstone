@@ -9,7 +9,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Moé</title>
+        <title>Moe Rashid</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -29,164 +29,34 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="container">
-            <div class="logo-container">
-                <section
-                    id="intro"
-                    class="d-flex flex-column justify-content-center align-items-center"
-                >
-                    <img
-                        src="Moe Rashid.png"
-                        alt="Logo"
-                        class="rotating-logo"
-                    />
-                    <h3>Artist | Software Developer | Designer</h3>
-                    <code>Creative people need inspiration.</code>
-                    <a href="#Bio">
-                        <span class="material-symbols-outlined" id="arrowDown">
-                            keyboard_arrow_down
-                        </span>
-                    </a>
-                </section>
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Logo" />
             </div>
-            <div class="window-container" id="pop-up">
-                <section id="Bio" class="mac-window">
-                    <div class="window-header">
-                        <div class="close-button"></div>
-                        <h1>Bio</h1>
-                    </div>
-                    <div class="window-content">
-                        <video class="video-image" controls>
-                            <source src="your-video.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </section>
-                <!-- end of bio section -->
+            <div class="icons">
+                <button id="icon1" class="icon">Icon 1</button>
+                <button id="icon2" class="icon">Icon 2</button>
+                <button id="icon3" class="icon">Icon 3</button>
+                <button id="icon4" class="icon">Icon 4</button>
             </div>
-            <section id="contact">
-                <h1>Contact</h1>
-                <div class="row">
-                    <div class="col-6">
-                        <p>
-                            Interested in collaborating? Lets work!
-                            <a href="mailto:scean.lawhorn@me.com">Email</a> me
-                            or fill out this form to get in touch.
-                        </p>
-                    </div>
-                    <!-- end of email link col
-                 -->
-                    <div class="col-6">
-                        <form>
-                            <div class="row">
-                                <div class="col">
-                                    <input
-                                        type="text"
-                                        placeholder="First Name"
-                                    />
-                                </div>
-                                <!-- end of first name col -->
-                                <div class="col">
-                                    <input
-                                        type="text"
-                                        placeholder="Last Name"
-                                    />
-                                </div>
-                                <!-- end of last name col -->
-                            </div>
-                            <input
-                                id="email"
-                                type="email"
-                                placeholder="email address"
-                            />
-                            <textarea
-                                placeholder="enter your text here"
-                            ></textarea>
-                            <!-- end of first row form -->
-                            <button type="button" class="btn btn-primary">
-                                Send 📧
-                            </button>
-                        </form>
-                        <!-- end of contact form -->
-                    </div>
-                    <!-- end of  form col-->
-                </div>
-                <!-- end of contact text form -->
-            </section>
-            <!-- end of contact section -->
-            <section id="portfolio">
-                <h1>Portfolio</h1>
-                <p>
-                    To view more details the project, click on any of the cards.
-                </p>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card">
-                            <!-- CARD #1 WEATHER APP -->
-                            <img
-                                src="https://portfolio.maxmatthe.ws/weatherApp.png"
-                                class="card-img-top"
-                                alt="screenshot of weather app"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Weather App</h5>
-                                <p class="card-text">
-                                    First front end project modeled after a
-                                    weather app
-                                </p>
-                                <a href="#" class="btn btn-primary"
-                                    >Make it rain</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of card 1 col -->
-                    <div class="col-4">
-                        <div class="card">
-                            <!-- CARD #2 FEEDBACK FORM -->
-                            <img
-                                src="https://portfolio.maxmatthe.ws/feedbackForm.png"
-                                class="card-img-top"
-                                alt="screenshot of feedback form"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Feedback form</h5>
-                                <p class="card-text">
-                                    Feedback form modeled after Google Forms.
-                                </p>
-                                <a href="#" class="btn btn-primary"
-                                    >Provide feedback</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of card 2 col -->
-                    <div class="col-4">
-                        <div class="card">
-                            <!-- CARD #3 MAXFLIX -->
-                            <img
-                                src="https://portfolio.maxmatthe.ws/maxflix.png"
-                                class="card-img-top"
-                                alt="screenshot of maxflix app"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Maxflix</h5>
-                                <p class="card-text">
-                                    My first project all by myself! Recreation
-                                    of a particular streaming service.
-                                </p>
-                                <a href="#" class="btn btn-primary"
-                                    >Get streaming</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of card 3 col  -->
-                </div>
-            </section>
-            <!-- end of portfolio section -->
-            <footer>AJL Holdings, 2024</footer>
+        </header>
+
+        <main>
+            <div id="imageContainer" class="image-container">
+                <!-- Images will be inserted here by JavaScript -->
+            </div>
+        </main>
+
+        <div id="galleryModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage" />
+            <div id="caption"></div>
+            <div class="navigation">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
         </div>
-        <!-- end of container -->
+
+        <script src="scripts.js"></script>
     </body>
 </html>
