@@ -56,18 +56,10 @@ main {
     height: 512px;
     width: 512px;
     margin: auto;
-    clip-path: polygon(
-        50% 22%, 58% 12%, 64% 10%, 
-        72% 12%, 78% 18%, 83% 25%, 
-        85% 36%, 75% 50%, 50% 74%, 
-        25% 50%, 15% 36%, 17% 25%, 
-        22% 18%, 28% 12%, 36% 10%, 
-        42% 12%, 50% 22%
-    );
 }
-    
+
 footer {
-    background-color:#e4e2dd;
+    background-color: #e4e2dd;
     padding: 10px 20px;
     text-align: center;
     margin-top: 250px;
@@ -80,7 +72,7 @@ footer {
 }
 
 .admin-link {
-    color:grey;
+    color: grey;
     text-decoration: none;
     font-weight: bold;
     font-size: 10px;
@@ -147,4 +139,3 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-
