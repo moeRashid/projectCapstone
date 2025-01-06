@@ -42,22 +42,6 @@ header {
     opacity: 25%;
 }
 
-main {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.Heart {
-    background: red;
-    background-repeat: no-repeat;
-    height: 512px;
-    width: 512px;
-    margin: auto;
-}
-
 footer {
     background-color: #e4e2dd;
     padding: 10px 20px;
